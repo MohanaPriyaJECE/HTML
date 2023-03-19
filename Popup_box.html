@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Popup Box</title>
+        <link rel="stylesheet" href="style3.css">
+    </head>
+    <body>
+        <div class="container">
+            <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+        <div class="popup" id="popup">
+            <img src="data:image/jpeg;base64,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">
+            <h2>Thank You!!</h2>
+            <p>Your response has been recorded successfully</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            
+            let popup = document.getElementById("popup");
+
+
+
+
+         function openPopup(){
+                popup.classList.add("open-popup");
+            }
+         function closePopup(){
+                popup.classList.remove("open-popup");
+            }
+        
+        </script>
+    </body>
+</html>
